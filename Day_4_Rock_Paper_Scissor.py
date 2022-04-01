@@ -28,6 +28,9 @@ scissors = '''
 rock_paper_scissors=[rock,paper,scissors]
 user_input=int(input("What do you choose? Type 0 for Rock,1 for paper or 2 for scissors."))
 print("User input")
+if user_input>=3 or user_input<0:
+    print("You entered invalid choice!You Lose!")
+    break
 print(rock_paper_scissors[user_input])
 computer_choice=random.randint(0,2)
 print("Computer choice")
