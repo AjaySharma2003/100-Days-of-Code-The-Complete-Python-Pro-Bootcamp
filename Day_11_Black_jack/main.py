@@ -13,7 +13,7 @@ def user_input(choice):
         while(choice!="n"):
             user_cards=check_ace(user_cards)
             user_cards.append(random_card_generator())
-            print(f"Your cards: {user_cards}, currect score: {sum(user_cards)}")
+            print(f"Your cards: {user_cards}, current score: {sum(user_cards)}")
             print("Computer's first card : ",computer_cards[0])
             if sum(user_cards)>=21:
                 choice="n"
