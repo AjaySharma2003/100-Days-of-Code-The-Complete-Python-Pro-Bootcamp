@@ -11,7 +11,7 @@ class CarManager:
         self.MOVE_INCREMENT = 5
 
     def create_car(self):
-        random_chance = random.randint(1, 6)
+        random_chance = random.randint(0, 6)
         if random_chance == 1:
             screen.tracer(0)
             new_car = Turtle()
